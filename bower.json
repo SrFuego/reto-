@@ -1,0 +1,29 @@
+{
+  "name": "reto-frontend-openlab-2018",
+  "description": "Desafio frontend de la comunidad openlab 2018",
+  "main": "",
+  "authors": [
+    "Manuel Jesús De la Cruz Sotelo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.1.0",
+    "fancybox": "@fancyapps/fancybox#^3.3.5",
+    "animate.css": "^3.5.2",
+    "bootbox.js": "bootbox#^4.4.0",
+    "hover": "^2.3.1",
+    "jQuery-viewport-checker": "^1.8.8",
+    "popper.js": "^1.14.3",
+    "slick-carousel": "^1.8.1"
+  }
+}

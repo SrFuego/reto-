@@ -33,7 +33,7 @@ gulp.task("remove", function () {
 gulp.task("create", ["remove"], function () {
     return gulp.src("*.js", {read: false})
         .pipe(shell([
-            "mkdir -p public/assets public/assets/icons public/assets/images public/assets/fonts public/assets/others public/css public/scripts public/scripts/vendor"
+            "mkdir -p public/assets public/assets/icons public/assets/images public/assets/fonts public/assets/others public/css public/scripts"
         ]));
 });
 
@@ -91,7 +91,7 @@ gulp.task("ugly", function () {
         .pipe(plumber())
         .pipe(concat("main.js"))
         .pipe(uglify())
-        .pipe(rename("main.min.js"))
+        .pipe(rename("app.min.js"))
         .pipe(gulp.dest("public/scripts/"));
 });
 
