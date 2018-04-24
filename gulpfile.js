@@ -52,7 +52,7 @@ gulp.task("start", ["remove", "create", "copy"]);
 //--------------------------------------||
 
 //Compile stylus files
-gulp.task("stylus", ["start"], function () {
+gulp.task("stylus", function () {
     return gulp.src("source/styles/main.styl")
         .pipe(plumber())
         .pipe(stylus({
@@ -76,7 +76,7 @@ gulp.task("styles", ["stylus"]);
 //----------------------------------||
 
 //Process libraries js
-gulp.task("concatenate", ["start"], function () {
+gulp.task("concatenate", function () {
     return gulp.src(["source/scripts/vendor/*.js"])
         .pipe(plumber())
         .pipe(concat("vendor.js"))
@@ -86,7 +86,7 @@ gulp.task("concatenate", ["start"], function () {
 });
 
 //Process own js
-gulp.task("ugly", ["start"], function () {
+gulp.task("ugly", function () {
     return gulp.src("source/scripts/app/*.js")
         .pipe(plumber())
         .pipe(concat("main.js"))
@@ -104,7 +104,7 @@ gulp.task("scripts", ["concatenate", "ugly"]);
 //---------||
 
 //Process pug templates
-gulp.task("pug", ["start"], function () {
+gulp.task("pug", function () {
     return gulp.src("source/templates/*.pug")
         .pipe(plumber())
         .pipe(pug())
@@ -149,7 +149,7 @@ gulp.task("webserver", ["styles", "scripts", "pug"], function () {
 //---------||
 //  SERVE  ||
 //---------||
-gulp.task("default", ["start", "styles", "scripts", "pug", "webserver", "watch"]);
+gulp.task("default", ["styles", "scripts", "pug", "webserver", "watch"]);
 
 
 // // Watch files to compile and reload
