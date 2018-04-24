@@ -1,0 +1,209 @@
+/*.animacionDer {
+  animation: animacionDer 0.8s;
+}
+
+@keyframes animacionDer {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+   width: 100%;
+  }
+}
+
+.animacionIzq {
+  animation: animacionIzq 0.8s;
+}
+
+@keyframes animacionIzq {
+    0% {
+      right: 100%;
+    }
+
+    100% {
+      right: 0%;
+    }
+}*/
+
+.animacionImg {
+    animation: animacionImg 1s;
+}
+
+@keyframes animacionImg {
+    0% {
+        opacity: 0.0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.1;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animaciontxt {
+    animation: animaciontxt 2s;
+}
+
+@keyframes animaciontxt {
+    0% {
+        opacity: 0.0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animacion-servicio1 {
+    animation: animacionserva 1s;
+}
+
+@keyframes animacionserva {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animacion-servicio2 {
+    animation: animacionservb 2s;
+}
+
+@keyframes animacionservb {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animacion-servicio3 {
+    animation: animacionservc 3s;
+}
+
+@keyframes animacionservc {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.scale1 {
+    animation: scalea 1.5s;
+    /*transition: all 0.4s;
+    transition-duration: 1s;*/
+}
+
+@keyframes scalea {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale2 {
+    animation: scaleb 2s;
+    /*transition: all 0.4s;
+    transition-duration: 1s;*/
+}
+
+@keyframes scaleb {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scale3 {
+    animation: scalec 2.5s;
+    /*transition: all 0.4s;
+    transition-duration: 1s;*/
+}
+
+@keyframes scalec {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
