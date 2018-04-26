@@ -13,13 +13,6 @@ const watch = require("gulp-watch");
 const server = require("gulp-server-livereload");
 
 
-// const connect = require('gulp-connect');
-// const inject = require('gulp-inject');
-// const wiredep = require('wiredep').stream;
-// const nib = require('nib');
-// const minifyCSS = require('gulp-csso');
-
-
 //----------------------------------------------------||
 //  DELETE EVERY FILE, CREATE FOLDERS AND COPY FILES  ||
 //----------------------------------------------------||
