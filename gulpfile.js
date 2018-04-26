@@ -112,6 +112,7 @@ gulp.task("watch", ["webserver"], function () {
     gulp.watch("source/scripts/app/*.js", ["ugly"]);
     gulp.watch("source/styles/*.styl", ["stylus"]);
     gulp.watch("source/templates/*.pug", ["pug"]);
+    gulp.watch("source/templates/**/*.pug", ["pug"]);
     watch("source/assets/**/*", function () {
         gulp.start("copy");
     });
@@ -144,16 +145,3 @@ gulp.task("webserver", ["styles", "scripts", "pug"], function () {
 //  SERVE  ||
 //---------||
 gulp.task("default", ["styles", "scripts", "pug", "webserver", "watch"]);
-
-
-// // Watch files to compile and reload
-// gulp.task('watch', function () {
-//     gulp.watch(['src/templates/*.pug'], ['inject', 'html']);
-//     gulp.watch(['src/styles/*.styl'], ['css-dev']);
-//     gulp.watch(['./bower.json'], ['wiredep']);
-// });
-//
-//
-// // gulp.task('default', [ 'html', 'css', 'js' ]);
-// gulp.task('default', ['server', 'watch']);
-// gulp.task('build', ['css-prod', 'html']);
