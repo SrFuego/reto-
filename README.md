@@ -3,6 +3,8 @@ Reto Frontend Openlab 2018
 
 Puedes tener una vista previa de los archivos ya compilados abriendo en el navegador el archivo `public/index.html`
 
+Enlace online: https://srfuego.github.io/reto-openlab-2018-frontend/
+
 
 Desarrollo:
 ----------
