@@ -1,6 +1,12 @@
 Reto Frontend Openlab 2018
 ==========================
 
+Puedes tener una vista previa de los archivos ya compilados abriendo en el navegador el archivo `public/index.html`
+
+
+Desarrollo:
+----------
+
 Primero debe tener instalado node (este repositorio fue probado con la version `v8.11.1`).
 
 Probablemente para las instalaciones de manera global en sistemas linux debera dar permisos de super usuario antes de instalar (`sudo` antes del `npm install --global`)
@@ -39,4 +45,4 @@ Probablemente para las instalaciones de manera global en sistemas linux debera d
 7. Compilar y lanzar el servidor de desarrollo:
 
     ```bash
-    gulp 
+    gulp
