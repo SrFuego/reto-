@@ -1,0 +1,60 @@
+section(id="contactenos" class="contacto-datos")
+    div(class="container")
+        div(class="pad1-contactenos col-xs-12  col-sm-12 col-md-12")
+            div(class="titulo-contactenos")
+                h2 Contáctenos
+            div(class="subrayado-contactenos")
+        div(class="pad2-contactenos col-xs-12")
+            div(class="datos-contacto col-xs-12 col-sm-12 col-md-offset-1 col-md-10")
+                div(class="dato-contacto col-xs-12 col-sm-4 col-md-4")
+                    center
+                        div(class="telf-contacto")
+                            img(src="assets/icons/cel.png")
+                        div(class="name-contacto")
+                            p Teléfono
+                        div(class="mas-contacto")
+                            p L a V 8:30 am - 6pm <br> (511)463-3434
+                div(class="dato-contacto col-xs-12 col-sm-4 col-md-4")
+                    center
+                        div(class="direccion-contacto")
+                            img(src="assets/icons/point.png")
+                        div(class="name-contacto")
+                            p Dirección
+                        div(class="mas-contacto")
+                            p Av. Guiseppe Garibaldi N°396 <br> Jesús María - Lima
+                div(class="dato-contacto col-xs-12 col-sm-4 col-md-4")
+                    center
+                        div(class="correo-contacto")
+                            img(src="assets/icons/email.png")
+                        div(class="name-contacto")
+                            p Correo
+                        div(class="mas-contacto")
+                            p turismo@camaradelima.org.pe
+        div(class="texto-contactenos col-xs-12")
+            center Si tienes alguna consulta, completa el siguente <br> formulario y comunicate con nosotros
+        div(class="formulario-contactenos")
+            div(class="col-xs-12 col-sm-12 col-md-12")
+                form(name="frmcontactenos" id="frmcontactenos")
+                    div(class="row form-content")
+                        div(class="col-xs-12")
+                            div(class="form-group")
+                                input(type="text" class="form-control estilo-llenadoform" name="nombre" id="nombre" placeholder="Nombres")
+                        div(class="col-xs-12")
+                            div(class="form-group")
+                                input(type="text" class="form-control estilo-llenadoform" name="apellidos" id="apellidos" placeholder="Apellidos")
+                        div(class="col-xs-12")
+                            div(class="form-group")
+                                input(type="text" class="form-control estilo-llenadoform" name="telefono" id="telefono" placeholder="Teléfono / Celular")
+                    div(class="row form-content")
+                        div(class="col-xs-12")
+                            div(class="form-group")
+                                input(type="email" class="form-control estilo-llenadoform" name="correo" id="correo" placeholder="Correo Eléctronico")
+                        div(class="col-xs-12")
+                            div(class="form-group")
+                                input(type="text" class="form-control estilo-llenadoform" name="celular" id="celular" placeholder="Celular")
+                    div(class="form-group")
+                        textarea(class="form-control textar cambio-mensaje estilo-llenadoform" name="mensaje" id="mensaje" placeholder="Consulta / Mensaje")
+                    div(class="text-right")
+                        button(type="submit" class="btn-send estilo-btnenviar" id="EnviarForm") Enviar
+                    div(id="dialog" title="Mensaje Contáctenos" style="display:none;")
+                        p(id="rpta")
