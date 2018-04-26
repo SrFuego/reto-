@@ -134,6 +134,7 @@ gulp.task("watch", ["webserver"], function () {
 gulp.task("webserver", ["styles", "scripts", "pug"], function () {
     gulp.src("./public")
         .pipe(server({
+            host: "0.0.0.0",
             livereload: true,
             defaultFile: "index.html",
             // directoryListing: {
